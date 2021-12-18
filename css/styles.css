@@ -5,8 +5,9 @@
   --fourth-color: #757575;
   --fifth-color: #ffffff;
   --sixth-color: rgba(255, 255, 255, 0.6);
+  --seventh-color: #2f303a;
+  --eighth-color: #188ce8;
 }
-
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -54,11 +55,14 @@ body {
 .header-contact:focus {
   color: var(--first-color);
 }
+.current {
+  color: var(--first-color);
+}
 
 /* ----------------Main part HTML------------------------------ */
 /* ------------------main block------------------------ */
 .block {
-  background-color: #2f303a;
+  background-color: var(--seventh-color);
 }
 .block-title {
   font-weight: 900;
@@ -71,7 +75,7 @@ body {
 }
 
 .block-btn {
-  font-family: Roboto;
+  font-family: inherit;
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -80,15 +84,19 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  cursor: pointer;
   color: var(--fifth-color);
-  background: #2196f3;
+  background: var(--first-color);
+}
+.block-btn:hover,
+.block-btn:focus {
+  background-color: var(--eighth-color);
 }
 /* -------------organizational qualities---------------- */
 .qualities-title {
   visibility: hidden;
 }
 .qualities-item-title {
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -96,7 +104,6 @@ body {
   color: var(--third-color);
 }
 .qualities-item-text {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -105,7 +112,6 @@ body {
 
 /* ---------------what are we doing---------------------------- */
 .doing-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -115,7 +121,6 @@ body {
 
 /* -------------------our team---------------------------- */
 .team-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -131,8 +136,6 @@ body {
   color: var(--third-color);
 }
 .team-item-text {
-  font-weight: 400;
-  font-size: 16px;
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
@@ -141,7 +144,7 @@ body {
 
 /* --------------------Contacts-------------------------- */
 .footer {
-  background-color: #2f303a;
+  background-color: var(--seventh-color);
 }
 .footer-logo {
   font-family: Raleway;
@@ -170,19 +173,27 @@ body {
   letter-spacing: 0.03em;
   color: var(--sixth-color);
 }
+.footer-address:hover,
+.footer-address:focus,
+.footer-contact:hover,
+.footer-contact:focus {
+  color: var(--first-color);
+}
 
 /* ----------------Main part portfolio------------------------------ */
+
 .portfolio-title {
   visibility: hidden;
 }
 .btn-portfolio {
-  font-family: Roboto;
+  font-family: inherit;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
   letter-spacing: 0.03em;
+  cursor: pointer;
   color: var(--third-color);
 }
 .btn-portfolio:hover,
@@ -199,8 +210,6 @@ body {
   color: var(--third-color);
 }
 .portfolio-item-text {
-  font-weight: 400;
-  font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
   color: var(--fourth-color);
