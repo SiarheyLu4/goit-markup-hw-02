@@ -10,6 +10,7 @@
 }
 body {
   font-family: 'Roboto', sans-serif;
+  color: var(--third-color);
 }
 
 .list {
@@ -101,7 +102,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--third-color);
 }
 .qualities-item-text {
   font-size: 14px;
@@ -116,7 +116,6 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--third-color);
 }
 
 /* -------------------our team---------------------------- */
@@ -125,7 +124,6 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--third-color);
 }
 .team-item-title {
   font-weight: 500;
@@ -133,7 +131,6 @@ body {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--third-color);
 }
 .team-item-text {
   line-height: 1.19;
@@ -207,7 +204,6 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--third-color);
 }
 .portfolio-item-text {
   line-height: 1.88;
